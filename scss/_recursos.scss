@@ -1,0 +1,42 @@
+@use 'sass:math';
+$font-size: 16px;
+$blanco: #fff;
+$negro: #040404;
+$seleccion: #3ccfe9;
+$color-icon: #32323280;
+$color-principal: #fa8072;
+$tipo-principal   : Helvetica;
+$color-tx-cualidad: rgb(228, 238, 108);
+$bg-slider:darkcyan;
+$bg-slider-card: antiquewhite;
+
+//funciones
+
+@function pix-rem($pixel){
+  $rem: math.div($pixel, 16) * 1rem;
+  @return $rem;
+}
+
+//mixin
+@mixin flex($dis, $direccion, $corte, $just, $align){
+  display: $dis;
+  flex-flow: $direccion $corte;
+  justify-content: $just;
+  align-items:$align;
+}
+@mixin grip($columna, $espacio, $separacion){
+  display: grip;
+  grid-template-columns: repeat($columna, $espacio) ;
+  gap: $separacion;
+}
+
+@mixin width-height($ancho, $alto){
+  width: $ancho;
+  height: $alto;
+}
+@mixin bg($fondo, $repeat, $size, $posicion-1, $posicion-2){
+  background: $fondo;
+  background-repeat: $repeat ;
+  background-size: $size;
+  background-position: $posicion-1 $posicion-2;
+}

@@ -1,0 +1,54 @@
+@use 'recursos';
+
+.nosotros{
+  // min-width: 100%;
+  max-width: recursos.pix-rem(1200);
+  margin: recursos.pix-rem(50) auto 0;
+  @include recursos.flex(flex,column, nowrap, center, center);
+  .banner-nosotros{
+    min-width: 100%;
+    max-width: recursos.pix-rem(1000);
+    object-fit: cover;
+    // margin: auto;
+    img{
+      width: 100%;
+    }
+  }
+  .reseña{
+    width: 100%;
+    text-align: center;
+    font-size: recursos.pix-rem(18);
+    line-height: recursos.pix-rem(20);
+    padding: recursos.pix-rem(20) 0;
+    p{
+      min-width: recursos.pix-rem(400) ;
+      max-width: recursos.pix-rem(700) ;
+      margin: recursos.pix-rem(10) auto;
+    }
+  }
+  .bg-servicio{
+    width: 100vw;
+    height: auto;
+    background-color: #bbb;
+    .servicio{
+      max-width: recursos.pix-rem(1200);
+      margin: auto;
+      display:grid;
+      grid-template-columns: repeat(4, minmax(calc(100%/4), recursos.pix-rem(350)));
+      padding: recursos.pix-rem(10);
+      .div-servicio{
+        @include recursos.flex(flex, column, nowrap, center, center);
+        height: recursos.pix-rem(200);
+        justify-content: center;
+        outline: solid 2px #ccc;
+        outline-offset: recursos.pix-rem(-10);
+        p{
+          text-align: justify;
+          padding: recursos.pix-rem(10) recursos.pix-rem(30);
+          font-size: recursos.pix-rem(14);
+          line-height: recursos.pix-rem(15);
+        }
+      }
+    }
+  }  
+}

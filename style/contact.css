@@ -1,0 +1,199 @@
+.contact {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 75rem;
+  min-width: 28.125rem;
+  margin: 0 auto 5rem;
+}
+.contact .sub-title {
+  min-width: 28.125rem;
+  max-width: 50rem;
+}
+.contact .sub-title h1 {
+  font-size: 1.875rem;
+  letter-spacing: 2px;
+  margin: 0.5rem;
+  font-weight: 800;
+  text-align: center;
+}
+.contact .sub-title p {
+  font-size: 0.9375rem;
+  line-height: 1.125rem;
+  color: #676767;
+  margin: 0.5rem;
+  text-align: center;
+}
+.contact .div-contact {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.contact .div-contact .form-contact {
+  max-width: 31.25rem;
+  margin: auto;
+}
+.contact .div-contact .form-contact .sub-title {
+  padding: 0.625rem 1.875rem 0 1.875rem;
+}
+.contact .div-contact .form-contact .sub-title h1 {
+  font-size: 1.5625rem;
+  letter-spacing: 1px;
+  margin: 0.5rem;
+  font-weight: 700;
+  text-align: left;
+}
+.contact .div-contact .form-contact .sub-title p {
+  font-size: 0.9375rem;
+  line-height: 1.125rem;
+  color: #676767;
+  margin: 0.5rem;
+  text-align: left;
+}
+.contact .div-contact .form-contact .div-form {
+  width: 100%;
+  padding: 0rem 1.875rem 1.875rem 1.875rem;
+  max-width: 37.5rem;
+}
+.contact .div-contact .form-contact .div-form .f-cont {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 1.25rem 0.625rem;
+  position: relative;
+  width: 25rem;
+}
+.contact .div-contact .form-contact .div-form .f-cont .f-input {
+  width: 100%;
+  color: #706c6c;
+  font-size: 1.125rem;
+  padding: 0.9375rem 0.25rem;
+  border-bottom: 1px solid rgba(87, 87, 87, 0.4941176471);
+  outline: none;
+  font-family: "Roboto";
+}
+.contact .div-contact .form-contact .div-form .f-cont .f-label {
+  color: rgba(87, 87, 87, 0.4941176471);
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 5px;
+  transform: translateY(10px);
+  transition: transform 500ms, color 300ms;
+}
+.contact .div-contact .form-contact .div-form .f-cont .f-input:focus, .contact .div-contact .form-contact .div-form .f-cont .f-input:not(:placeholder-shown) {
+  color: #4d4646;
+}
+.contact .div-contact .form-contact .div-form .f-cont .f-input:focus + .f-label, .contact .div-contact .form-contact .div-form .f-cont .f-input:not(:placeholder-shown) + .f-label {
+  transform: translateY(-5px) scale(0.8);
+  transform-origin: left top;
+  color: #040404;
+  font-weight: 600;
+}
+.contact .div-contact .form-contact .div-form .f-cont .line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #3766f2;
+  transform: left bottom;
+  transform: scale(0);
+  transition: transform 400ms;
+}
+.contact .div-contact .form-contact .div-form .f-cont .f-input:focus ~ .line, .contact .div-contact .form-contact .div-form .f-cont .f-input:not(:placeholder-shown) ~ .line {
+  transform: scale(1);
+}
+.contact .div-contact .form-contact .div-form .f-cont .f-text {
+  transition: all 300ms linear;
+  width: 100%;
+  padding: 0.625rem;
+  margin-top: 1.25rem;
+  transition: all 500ms ease;
+  resize: none;
+  height: 50px;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  max-height: 9.375rem;
+}
+.contact .div-contact .form-contact .div-form .f-cont .f-text::-webkit-scrollbar {
+  width: 0px;
+}
+.contact .div-contact .form-contact .div-form .f-cont .f-text:focus + .f-label, .contact .div-contact .form-contact .div-form .f-cont .f-text:not(:placeholder-shown) + .f-label {
+  transform: translateY(-5px) scale(0.8);
+  transform-origin: left top;
+  color: #040404;
+  font-weight: 600;
+}
+.contact .div-contact .form-contact .div-form .f-cont .f-text:focus, .contact .div-contact .form-contact .div-form .f-cont .f-text:not(:placeholder-shown) {
+  outline: 2px solid #3766f2;
+  border-radius: 10px;
+}
+.contact .div-contact .form-contact .div-form .f-cont .f-text:placeholder-shown ~ .line {
+  transform: scale(1);
+  background-color: rgba(87, 87, 87, 0.4941176471);
+}
+.contact .div-contact .form-contact .div-form .btn-send {
+  margin: auto;
+  width: 12.5rem;
+  background-color: #3766f2;
+  color: #fff;
+  font-weight: 400;
+  font-size: 1.125rem;
+  padding: 0.3125rem 0rem;
+  border-radius: 0.875rem;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+.contact .div-contact .form-contact .div-form .btn-send:active {
+  transform: scale(0.9);
+  background-color: #5fe655;
+}
+.contact .div-contact .datos-contact {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  max-width: 31.25rem;
+  margin-top: 2.5rem;
+  padding: 1.25rem;
+  background-color: rgba(176, 176, 176, 0.4274509804);
+}
+.contact .div-contact .datos-contact .div-title {
+  font-size: 1.5625rem;
+  letter-spacing: 1px;
+  margin: 0.5rem;
+  font-weight: 700;
+}
+.contact .div-contact .datos-contact .datos {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  height: 5rem;
+  margin: 0.625rem;
+}
+.contact .div-contact .datos-contact .datos i {
+  width: 2.1875rem;
+  font-size: 2.5rem;
+  margin: 0 0.625rem;
+}
+.contact .div-contact .datos-contact .datos .div-datos {
+  padding: 0.625rem;
+}
+.contact .div-contact .datos-contact .datos .div-datos h1 {
+  font-size: 1.125rem;
+  margin-bottom: 0.4375rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.contact .div-contact .datos-contact .datos .div-datos p, .contact .div-contact .datos-contact .datos .div-datos a {
+  font-size: 0.9375rem;
+  line-height: 1.125rem;
+  color: #676767;
+}
+
+/*# sourceMappingURL=contact.css.map */
